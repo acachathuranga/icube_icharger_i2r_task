@@ -1,0 +1,21 @@
+charger_enable_action: /start_wireless_charge
+charger_disable_action: /stop_wireless_charge
+#battery_status_topic: /battery_state
+battery_status_topic: /battery_is_charging
+charger_control_service: /enable_charger
+
+
+
+cmd_vel_input: /base_cmd_vel
+cmd_vel_output: /charging_safe_cmd_vel
+
+## Charger parameters
+charger_address: 11
+battery_type_capacity: 15
+charging_voltage: 48
+charging_current: 5
+
+max_charging_retries: 5
+charge_interval_mins: 2
+target_capacity: 90
+trickle_charge: true

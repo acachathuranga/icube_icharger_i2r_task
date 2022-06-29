@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="charger_control_task" name="charger_control_task" type="charger_control_task_node" output="screen">
+
+        <!-- this node's task ID -->
+        <param name="task_id" value="10009" type="int" />
+
+        <!-- for testing only, when demo timer has finished, publish this value instead
+        <param name="demo_task_done_status_value" value="-3" type="int" /> -->
+
+        <rosparam command="load" file="$(find charger_control_task)/config/parameters.yaml" />
+
+    </node>
+ 
+</launch>
